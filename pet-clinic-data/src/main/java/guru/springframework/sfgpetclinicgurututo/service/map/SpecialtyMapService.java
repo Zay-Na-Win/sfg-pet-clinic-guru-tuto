@@ -1,13 +1,13 @@
 package guru.springframework.sfgpetclinicgurututo.service.map;
 
 import guru.springframework.sfgpetclinicgurututo.model.Specialty;
-import guru.springframework.sfgpetclinicgurututo.service.SpecialtiesService;
+import guru.springframework.sfgpetclinicgurututo.service.SpecialtyService;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
 @Service
-public class SpecialtyMapService extends AbstractMapService<Specialty, Long> implements SpecialtiesService {
+public class SpecialtyMapService extends AbstractMapService<Specialty, Long> implements SpecialtyService {
     @Override
     public Set<Specialty> findAll() {
         return super.findAll();
@@ -25,7 +25,7 @@ public class SpecialtyMapService extends AbstractMapService<Specialty, Long> imp
 
     @Override
     public Specialty save(Specialty object) {
-        return null;
+        return super.save(object);
     }
 
     @Override
